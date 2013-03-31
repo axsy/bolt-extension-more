@@ -41,7 +41,7 @@ class Extension extends BaseExtension
                 $content->values[$field] = $matches[1];
             }
 
-            return $content->offsetGet($field);
+            return $content[$field];
         }, array(
             'is_safe' => array('html')
         )));
